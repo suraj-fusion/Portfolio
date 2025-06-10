@@ -13,7 +13,7 @@ function App() {
       <div className="flex flex-col max-w-3xl min-h-screen mx-auto text-white px-8 font-sans">
         <p className="w-full bg-red-500 rounded p-2 mt-2">
         
-          This portfolio is in progress and haven't been completed yet
+          This portfolio is in progress and hasn't been completed yet
         </p>
         <NavBar />
 
