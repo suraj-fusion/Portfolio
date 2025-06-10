@@ -1,3 +1,5 @@
+import profile from "../../public/profile.png"
+import downloadIcon from "../../public/download.svg"
 function Introduction() {
   return (
     <div className="flex">
@@ -15,14 +17,14 @@ function Introduction() {
           <div className="flex">
             <button class="inline-flex items-center whitespace-nowrap rounded-md text-sm font-medium transition-colors focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-ring disabled:pointer-events-none disabled:opacity-50 border border-input bg-background shadow-sm hover:bg-gray-700 hover:text-accent-foreground h-9 px-4 py-2 gap-1">
               <span class="font-semibold">Resume</span>
-              <img src="/public/download.svg" />
+              <img src={downloadIcon} />
             </button>
           </div>
         </a>
       </div>
       <div className="flex flex-col justify-end">
         <img
-          src="/public/profile.png"
+          src={profile}
           height={1000}
           width={1100}
           className="rounded "
