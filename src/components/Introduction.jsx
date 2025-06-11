@@ -7,13 +7,13 @@ import leetcodeLogo from "../../public/leetcodeLogo.svg";
 function Introduction() {
   return (
     <div className="grid sm:grid-cols-2 grid-cols-1 gap-8">
-      <div className="flex flex-col gap-4 order-2 sm:order-1">
+      <div className="flex flex-col gap-4 order-2 sm:order-1 items-center sm:items-start">
         <div className="font-bold text-4xl mt-8 text-blue-200">hi suraj here 👋</div>
         <div> 24-year-old software developer from India 🇮🇳.</div>
-        <div className="max-w-[90%]">
+        <div className="sm:max-w-[90%] ">
          I enjoy building full-stack web applications, solving data structures and algorithms puzzles, and tackling challenging coding problems. When I’m not immersed in creating web solutions, you’ll often find me perfecting my coffee brewing skills to keep my programming energy high. I’m passionate about exploring the cutting edge of web development and am always eager to learn and share new technological insights.
         </div>
-        <div className="flex w-full gap-7 items-center"> 
+        <div className="flex gap-7 items-center w-full"> 
           <a
             href="https://drive.google.com/file/d/1CN6WY-e46TUH4JziNKcV7xAKvDBNf1LX/view?usp=sharing"
             target="_"
@@ -39,7 +39,7 @@ function Introduction() {
           </a>
         </div>
       </div>
-      <div className="flex flex-col justify-center order-1 sm:order-2 ">
+      <div className="flex flex-col order-1 sm:order-2 items-center sm:items-start justify-center">
         <img src={profile} height={300} width={300} className="rounded " />
       </div>
     </div>

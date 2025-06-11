@@ -2,7 +2,7 @@ function Technologies() {
   return (
     <>
       <div className="font-bold text-4xl mt-8 mb-6 text-blue-200">
-       technologies,languages, & tools i know ⚙
+       technologies,languages, & tools i know. ⚙
       </div>
 
       <div className="grid grid-cols-1 sm:grid-cols-3 border p-2 rounded">
