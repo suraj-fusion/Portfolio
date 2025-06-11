@@ -6,8 +6,8 @@ import xLogo from "../../public/xLogo.svg";
 import leetcodeLogo from "../../public/leetcodeLogo.svg";
 function Introduction() {
   return (
-    <div className="flex">
-      <div className="flex flex-col gap-4">
+    <div className="grid sm:grid-cols-2 grid-cols-1 gap-8">
+      <div className="flex flex-col gap-4 order-2 sm:order-1">
         <div className="font-bold text-4xl mt-8 text-blue-200">hi suraj here 👋</div>
         <div> 24-year-old software developer from India 🇮🇳.</div>
         <div className="max-w-[90%]">
@@ -19,7 +19,7 @@ function Introduction() {
             target="_"
           >
             <div className="flex">
-              <button class="inline-flex items-center whitespace-nowrap rounded-md text-sm font-medium transition-colors focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-ring disabled:pointer-events-none disabled:opacity-50 border border-input bg-background shadow-sm hover:bg-gray-700 hover:text-accent-foreground h-9 px-4 py-2 gap-1">
+              <button class="inline-flex items-center whitespace-nowrap min-w-fit rounded-md text-sm font-medium transition-colors focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-ring disabled:pointer-events-none disabled:opacity-50 border border-input bg-background shadow-sm hover:bg-gray-700 hover:text-accent-foreground h-9 px-4 py-2 gap-1">
                 <span class="font-semibold">Resume</span>
                 <img src={downloadIcon} />
               </button>
@@ -39,8 +39,8 @@ function Introduction() {
           </a>
         </div>
       </div>
-      <div className="flex flex-col justify-center">
-        <img src={profile} height={1000} width={1100} className="rounded " />
+      <div className="flex flex-col justify-center order-1 sm:order-2 ">
+        <img src={profile} height={300} width={300} className="rounded " />
       </div>
     </div>
   );

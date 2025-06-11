@@ -2,22 +2,22 @@ import NavBar from "./components/NavBar";
 import { Routes, Route } from "react-router-dom";
 import Home from "./pages/Home";
 import Work from "./pages/Work";
-import Technologies from "./pages/Technologies";
-import Contact from "./pages/Contact";
 import NoPage from "./pages/NoPage";
 import { BrowserRouter } from "react-router-dom";
 import ProjectsPage from "./pages/Projects";
+import TechnologiesPage from "./pages/TechnologiesPage";
+import ContactPage from "./pages/ContactPage";
 function App() {
   return (
     <BrowserRouter>
-      <div className="flex flex-col max-w-3xl min-h-screen mx-auto text-white px-8 font-sans">
+      <div className="flex flex-col max-w-[50rem] min-h-screen mx-auto text-white px-8 font-sans">
         <NavBar />
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/work" element={<Work />} />
           <Route path="/projects" element={<ProjectsPage />} />
-          <Route path="/technologies" element={<Technologies />} />
-          <Route path="/contact" element={<Contact />} />
+          <Route path="/technologies" element={<TechnologiesPage />} />
+          <Route path="/contact" element={<ContactPage />} />
           <Route path="*" element={<NoPage />} />
         </Routes>
       </div>
