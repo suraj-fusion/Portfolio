@@ -1,8 +1,9 @@
+import Experiences from "../components/Experiences"
+
 function Work() {
-    return (
-        <div>
-            Work
-        </div>
+    return (<>
+         <Experiences/>
+</>
     )
 }
 

@@ -1,9 +1,11 @@
-function Projects() {
+import Projects from "../components/Projects"
+
+function ProjectsPage() {
     return (
         <div>
-            Projects
+          <Projects/>
         </div>
     )
 }
 
-export default Projects
+export default ProjectsPage
