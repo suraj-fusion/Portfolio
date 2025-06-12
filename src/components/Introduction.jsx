@@ -15,7 +15,7 @@ function Introduction() {
         </div>
         <div className="flex gap-7 items-center w-full"> 
           <a
-            href="https://drive.google.com/file/d/1CN6WY-e46TUH4JziNKcV7xAKvDBNf1LX/view?usp=sharing"
+            href="https://drive.google.com/file/d/1lhyfuTJDQlIaPTQ0YuldvTuqZIbG5Pmn/view?usp=sharing"
             target="_"
           >
             <div className="flex">
