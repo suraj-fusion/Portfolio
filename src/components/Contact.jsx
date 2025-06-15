@@ -1,4 +1,5 @@
 import React from 'react';
+import FramerWrapper from './FramerWrapper';
 
 function Contact() {
   const handleSubmit = (event) => {
@@ -16,7 +17,7 @@ function Contact() {
   };
 
   return (
-    <>
+    <FramerWrapper>
       <div className="font-bold text-4xl mt-8 mb-6 text-blue-200">
         contact me.🌐
       </div>
@@ -85,7 +86,7 @@ function Contact() {
           </form>
         </article>
       </main>
-    </>
+    </FramerWrapper>
   );
 }
 

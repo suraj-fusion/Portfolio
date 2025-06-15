@@ -4,8 +4,9 @@ import linkedInLogo from "../../public/linkedInLogo.svg";
 import githubLogo from "../../public/githubLogo.svg";
 import xLogo from "../../public/xLogo.svg";
 import leetcodeLogo from "../../public/leetcodeLogo.svg";
+import FramerWrapper from "./FramerWrapper";
 function Introduction() {
-  return (
+  return ( <FramerWrapper>
     <div className="grid sm:grid-cols-2 grid-cols-1 gap-8">
       <div className="flex flex-col gap-4 order-2 sm:order-1 items-center sm:items-start">
         <div className="font-bold text-4xl mt-8 text-blue-200">hi suraj here 👋</div>
@@ -43,6 +44,7 @@ function Introduction() {
         <img src={profile} height={300} width={300} className="rounded " />
       </div>
     </div>
+    </FramerWrapper>
   );
 }
 

@@ -1,9 +1,10 @@
 import reverieLogo from "../../public/reverieLogo.png"
+import FramerWrapper from "./FramerWrapper";
 
 
 function Experiences() {
   return (
-    <>
+    <FramerWrapper>
       <div className="font-bold text-4xl mt-8 mb-6 text-blue-200">
         my work experiences.💻
       </div>
@@ -99,7 +100,7 @@ function Experiences() {
           </ul>
         </div>
       </div>
-    </>
+   </FramerWrapper>
   );
 }
 

@@ -7,6 +7,7 @@ import { BrowserRouter } from "react-router-dom";
 import ProjectsPage from "./pages/Projects";
 import TechnologiesPage from "./pages/TechnologiesPage";
 import ContactPage from "./pages/ContactPage";
+import FramerWrapper from "./components/FramerWrapper";
 function App() {
   return (
     <BrowserRouter>

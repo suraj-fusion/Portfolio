@@ -2,10 +2,11 @@ import extensionImage from "../../public/extension.png"
 import usePopCornImage from "../../public/usePopCorn.png"
 import blogFusionImage from "../../public/blogFusion.png"
 import bloodAssitImage from "../../public/bloodAssit.png"
+import FramerWrapper from "./FramerWrapper";
 
 function Projects() {
   return (
-    <>
+    <FramerWrapper>
       <div className="font-bold text-4xl mt-8 mb-6 text-blue-200">
         my projects.👨‍💻
       </div>
@@ -421,7 +422,7 @@ function Projects() {
           </div>
         </section>
       </article>
-    </>
+    </FramerWrapper>
   );
 }
 
