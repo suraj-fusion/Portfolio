@@ -8,8 +8,8 @@ function NavBar() {
       <header className="sticky top-0 z-50 bg-background/75 py-6 backdrop-blur-sm">
         <ul className="flex  text-gray-500 sm:gap-8 justify-between sm:justify-normal  ">
           <Link to="/">
-            <li className="hover:text-white cursor-pointer flex gap-4">
-              {" "}
+            <li className="hover:text-white cursor-pointer flex gap-2">
+            
               <motion.img
                 initial={{ rotate: 0 }}
                 animate={{ rotate: 360 }}
@@ -17,6 +17,7 @@ function NavBar() {
                 src={fusionLogo}
                 height={48}
                 width={48}
+                className="hidden sm:block"
               />{" "}
               <p>home</p>{" "}
             </li>

@@ -19,7 +19,7 @@ function Technologies() {
   return (
     <FramerWrapper>
       <div className="font-bold text-4xl mt-8 mb-6 text-blue-200">
-        technologies,languages, & tools i know. ⚙
+        technologies i know. ⚙
       </div>
       <div className="grid grid-cols-1 sm:grid-cols-3 border p-2 rounded gap-6 sm:gap-8">
          <a href="https://www.javascript.com/" className="flex px-6 gap-2" target="_">
