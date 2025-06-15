@@ -45,7 +45,7 @@ function Technologies() {
           />
         </a>
 
-       <a href="https://react.dev/" className="flex px-6 gap-2" target="_">
+       <a href="https://nextjs.org/" className="flex px-6 gap-2" target="_">
           <div className=" max-w-fit  py-1">Next JS </div>
           <motion.img
             initial={{ rotate: 0 }}
@@ -67,7 +67,7 @@ function Technologies() {
             width={24}
           />
         </a>
-       <a href="https://react.dev/" className="flex px-6 gap-2" target="_">
+       <a href="https://www.mongodb.com/" className="flex px-6 gap-2" target="_">
           <div className=" max-w-fit  py-1">Prisma </div>
           <motion.img
             initial={{ rotate: 0 }}
@@ -78,7 +78,7 @@ function Technologies() {
             width={16}
           />
         </a>
-       <a href="https://react.dev/" className="flex px-6 gap-2" target="_">
+       <a href="https://www.docker.com/" className="flex px-6 gap-2" target="_">
           <div className=" max-w-fit  py-1">Docker </div>
           <motion.img
             initial={{ rotate: 0 }}
@@ -89,7 +89,7 @@ function Technologies() {
             width={24}
           />
         </a>
-       <a href="https://react.dev/" className="flex px-6 gap-2" target="_">
+       <a href="https://www.postgresql.org/" className="flex px-6 gap-2" target="_">
           <div className=" max-w-fit  py-1">PostgreSQL </div>
           <motion.img
             initial={{ rotate: 0 }}
@@ -100,7 +100,7 @@ function Technologies() {
             width={24}
           />
         </a>
-       <a href="https://react.dev/" className="flex px-6 gap-2" target="_">
+       <a href="https://www.mysql.com/" className="flex px-6 gap-2" target="_">
           <div className=" max-w-fit  py-1">MySQL </div>
           <motion.img
             initial={{ rotate: 0 }}
@@ -111,7 +111,7 @@ function Technologies() {
             width={24}
           />
         </a>
-        <a href="https://react.dev/" className="flex px-6 gap-2" target="_">
+        <a href="https://en.wikipedia.org/wiki/CSS" className="flex px-6 gap-2" target="_">
           <div className=" max-w-fit  py-1">CSS </div>
           <motion.img
             initial={{ rotate: 0 }}
@@ -122,7 +122,7 @@ function Technologies() {
             width={24}
           />
         </a>
-     <a href="https://react.dev/" className="flex px-6 gap-2" target="_">
+     <a href="https://tailwindcss.com/" className="flex px-6 gap-2" target="_">
           <div className=" max-w-fit  py-1">Tailwind </div>
           <motion.img
             initial={{ rotate: 0 }}
@@ -133,7 +133,7 @@ function Technologies() {
             width={24}
           />
         </a>
-       <a href="https://react.dev/" className="flex px-6 gap-2" target="_">
+       <a href="https://git-scm.com/" className="flex px-6 gap-2" target="_">
           <div className=" max-w-fit  py-1">Git </div>
           <motion.img
             initial={{ rotate: 0 }}
@@ -144,7 +144,7 @@ function Technologies() {
             width={24}
           />
         </a>
-       <a href="https://react.dev/" className="flex px-6 gap-2" target="_">
+       <a href="https://github.com/" className="flex px-6 gap-2" target="_">
           <div className=" max-w-fit  py-1">GitHub </div>
           <motion.img
             initial={{ rotate: 0 }}
@@ -155,7 +155,7 @@ function Technologies() {
             width={24}
           />
         </a>
-        <a href="https://react.dev/" className="flex px-6 gap-2" target="_">
+        <a href="https://expressjs.com/" className="flex px-6 gap-2" target="_">
           <div className=" max-w-fit  py-1">Express.js</div>
           <motion.img
             initial={{ rotate: 0 }}
@@ -166,7 +166,7 @@ function Technologies() {
             width={24}
           />
         </a>
-        <a href="https://react.dev/" className="flex px-6 gap-2" target="_">
+        <a href="https://workers.cloudflare.com/" className="flex px-6 gap-2" target="_">
           <div className=" max-w-fit  py-1">CloudFlare Workers </div>
           <motion.img
             initial={{ rotate: 0 }}
@@ -177,7 +177,7 @@ function Technologies() {
             width={24}
           />
         </a>
-         <a href="https://react.dev/" className="flex px-6 gap-2" target="_">
+         <a href="https://www.npmjs.com/" className="flex px-6 gap-2" target="_">
           <div className=" max-w-fit  py-1">NPM </div>
           <motion.img
             initial={{ rotate: 0 }}
