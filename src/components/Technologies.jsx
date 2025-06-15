@@ -56,7 +56,7 @@ function Technologies() {
             width={24}
           />
         </a>
-       <a href="https://react.dev/" className="flex px-6 gap-2" target="_">
+       <a href="https://www.mongodb.com/" className="flex px-6 gap-2" target="_">
           <div className=" max-w-fit  py-1">Mongo DB </div>
           <motion.img
             initial={{ rotate: 0 }}
@@ -67,7 +67,7 @@ function Technologies() {
             width={24}
           />
         </a>
-       <a href="https://www.mongodb.com/" className="flex px-6 gap-2" target="_">
+       <a href="https://www.prisma.io/" className="flex px-6 gap-2" target="_">
           <div className=" max-w-fit  py-1">Prisma </div>
           <motion.img
             initial={{ rotate: 0 }}
