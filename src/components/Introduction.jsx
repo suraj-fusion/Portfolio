@@ -1,4 +1,4 @@
-import profile from "../../public/profile.png";
+import profile from "../../public/profile.jpeg";
 import downloadIcon from "../../public/download.svg";
 import linkedInLogo from "../../public/linkedInLogo.svg";
 import githubLogo from "../../public/githubLogo.svg";
