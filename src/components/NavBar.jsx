@@ -8,8 +8,13 @@ function NavBar() {
       <header className="sticky top-0 z-50 bg-background/75 py-6 backdrop-blur-sm">
         <ul className="flex  text-gray-500 sm:gap-8 justify-between sm:justify-normal  ">
           <Link to="/">
-            <li className="hover:text-white cursor-pointer flex gap-2">
-            
+            <motion.li
+              whileHover={{
+                scale: 1.1,
+              }}
+              transition={{ type: "spring", stiffness: 300, damping: 20 }}
+              className="hover:text-white cursor-pointer flex gap-2"
+            >
               <motion.img
                 initial={{ rotate: 0 }}
                 animate={{ rotate: 360 }}
@@ -18,24 +23,53 @@ function NavBar() {
                 height={48}
                 width={48}
                 className="hidden sm:block"
-              />{" "}
-              <p>home</p>{" "}
-            </li>
+              />
+              <p>home</p>
+            </motion.li>
           </Link>
           <Link to="/work">
-            {" "}
-            <li className="hover:text-white cursor-pointer">work</li>
+            <motion.li
+              whileHover={{
+                scale: 1.1,
+              }}
+              transition={{ type: "spring", stiffness: 300, damping: 20 }}
+              className="hover:text-white cursor-pointer"
+            >
+              work
+            </motion.li>
           </Link>
           <Link to="/projects">
-            {" "}
-            <li className="hover:text-white cursor-pointer">projects</li>
+            <motion.li
+              whileHover={{
+                scale: 1.1,
+              }}
+              transition={{ type: "spring", stiffness: 300, damping: 20 }}
+              className="hover:text-white cursor-pointer"
+            >
+              projects
+            </motion.li>
           </Link>
           <Link to="/technologies">
-            <li className="hover:text-white cursor-pointer">technologies</li>
+            <motion.li
+              whileHover={{
+                scale: 1.1,
+              }}
+              transition={{ type: "spring", stiffness: 300, damping: 20 }}
+              className="hover:text-white cursor-pointer"
+            >
+              technologies
+            </motion.li>
           </Link>
           <Link to="/contact">
-            {" "}
-            <li className="hover:text-white cursor-pointer">contact</li>
+            <motion.li
+              whileHover={{
+                scale: 1.1,
+              }}
+              transition={{ type: "spring", stiffness: 300, damping: 20 }}
+              className="hover:text-white cursor-pointer"
+            >
+              contact
+            </motion.li>
           </Link>
         </ul>
       </header>

@@ -3,7 +3,8 @@ import usePopCornImage from "../../public/usePopCorn.png";
 import blogFusionImage from "../../public/blogFusion.png";
 import bloodAssitImage from "../../public/bloodAssit.png";
 import FramerWrapper from "./FramerWrapper";
-import DialysisBookImage from "../../public/dialysisBook.png"
+import DialysisBookImage from "../../public/dialysisBook.png";
+import { motion } from "framer-motion";
 
 function Projects() {
   return (
@@ -13,7 +14,13 @@ function Projects() {
       </div>
       <article className="mt-8 flex flex-col gap-8 pb-16">
         <section className="grid grid-cols-1 gap-4 sm:grid-cols-2">
-          <div className="rounded-xl border bg-card text-card-foreground shadow flex flex-col">
+          <motion.div
+            whileHover={{
+              scale: 1.05,
+            }}
+            transition={{ type: "spring", stiffness: 300, damping: 20 }}
+            className="rounded-xl border bg-card text-card-foreground shadow flex flex-col"
+          >
             <div className="flex flex-col space-y-1.5 p-6">
               <a href="https://github.com/suraj-fusion/Dialysis-Book">
                 <img
@@ -33,9 +40,9 @@ function Projects() {
               </h3>
               <div className="prose max-w-full text-pretty font-sans text-xs text-muted-foreground dark:prose-invert">
                 <p>
-                 Dialysis book is a simple cross platform mobile app that
-                  helps patients or caregivers log and monitor each dialysis
-                  session. It records key details like date, time, weight, blood
+                  Dialysis book is a simple cross platform mobile app that helps
+                  patients or caregivers log and monitor each dialysis session.
+                  It records key details like date, time, weight, blood
                   pressure, making it easier to track progress and share updates
                   with doctors.
                 </p>
@@ -82,8 +89,14 @@ function Projects() {
                 </a>
               </div>
             </div>
-          </div>
-          <div className="rounded-xl border bg-card text-card-foreground shadow flex flex-col">
+          </motion.div>
+          <motion.div
+            whileHover={{
+              scale: 1.05,
+            }}
+            transition={{ type: "spring", stiffness: 300, damping: 20 }}
+            className="rounded-xl border bg-card text-card-foreground shadow flex flex-col"
+          >
             <div className="flex flex-col space-y-1.5 p-6">
               <a href="https://chromewebstore.google.com/detail/tubequiz/nhodeopkbjdjckmagfiggdagijjbleen">
                 <img
@@ -199,9 +212,15 @@ function Projects() {
                 </a>
               </div>
             </div>
-          </div>
+          </motion.div>
 
-          <div className="rounded-xl border bg-card text-card-foreground shadow flex flex-col">
+          <motion.div
+            whileHover={{
+              scale: 1.05, 
+            }}
+            transition={{ type: "spring", stiffness: 300, damping: 20 }}
+            className="rounded-xl border bg-card text-card-foreground shadow flex flex-col"
+          >
             <div className="flex flex-col space-y-1.5 p-6">
               <a href="https://use-pop-corn-six.vercel.app/">
                 <img
@@ -294,9 +313,15 @@ function Projects() {
                 </a>
               </div>
             </div>
-          </div>
+          </motion.div>
 
-          <div className="rounded-xl border bg-card text-card-foreground shadow flex flex-col">
+          <motion.div
+            whileHover={{
+              scale: 1.05, 
+            }}
+            transition={{ type: "spring", stiffness: 300, damping: 20 }}
+            className="rounded-xl border bg-card text-card-foreground shadow flex flex-col"
+          >
             <div className="flex flex-col space-y-1.5 p-6">
               <a href="https://daily-journal-two.vercel.app/">
                 <img
@@ -394,8 +419,14 @@ function Projects() {
                 </a>
               </div>
             </div>
-          </div>
-          <div className="rounded-xl border bg-card text-card-foreground shadow flex flex-col">
+          </motion.div>
+          <motion.div
+            whileHover={{
+              scale: 1.05, 
+            }}
+            transition={{ type: "spring", stiffness: 300, damping: 20 }}
+            className="rounded-xl border bg-card text-card-foreground shadow flex flex-col"
+          >
             <div className="flex flex-col space-y-1.5 p-6">
               <a href="https://github.com/suraj-fusion/BloodAssit">
                 <img
@@ -486,7 +517,7 @@ function Projects() {
                 </a>
               </div>
             </div>
-          </div>
+          </motion.div>
         </section>
       </article>
     </FramerWrapper>
