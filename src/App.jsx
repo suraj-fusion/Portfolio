@@ -31,12 +31,12 @@ function App() {
 
   return (
     <BrowserRouter>
-      <div className="relative overflow-hidden">
+      <div className="relative">
        
           {showIntro && (
             <motion.div
               key="splash"
-              className="absolute top-0 left-0 flex items-center justify-center h-screen w-screen bg-black text-white text-5xl font-bold z-50"
+              className="absolute top-0 left-0 flex items-center justify-center h-screen w-screen bg-black text-white text-5xl font-bold z-50 bg"
               initial={{ y: 0 }}
               animate={endAnim ? { y: "-100%" } : { y: 0 }}
               exit={{ opacity: 0 }}
@@ -57,9 +57,8 @@ function App() {
             </motion.div>
           )}
       
-
-        {/* Main App */}
-        <motion.div
+       { showIntro===false && (
+          <motion.div
           key="main"
           className="flex flex-col max-w-[50rem] min-h-screen mx-auto text-white px-8 font-sans"
           initial={{ opacity: 0 }}
@@ -75,7 +74,10 @@ function App() {
             <Route path="/contact" element={<ContactPage />} />
             <Route path="*" element={<NoPage />} />
           </Routes>
-        </motion.div>
+        </motion.div>)
+       }
+        
+       
       </div>
     </BrowserRouter>
   );

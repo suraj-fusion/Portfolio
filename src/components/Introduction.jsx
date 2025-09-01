@@ -7,6 +7,7 @@ import leetcodeLogo from "../../public/leetcodeLogo.svg";
 import FramerWrapper from "./FramerWrapper";
 
 import { motion } from "framer-motion";
+import { useEffect, useState } from "react";
 function Introduction() {
   function handleResumeDownload() {
     const link = document.createElement("a");
@@ -14,24 +15,59 @@ function Introduction() {
     link.download = "Suraj_Raj_Resume.pdf";
     link.click();
   }
+
+  const [hi, setHi] = useState(false);
+
+  const [basicIntro, setBasicIntro] = useState(false);
+
+  const [intro, setIntro] = useState(false);
+
+  useEffect(() => {
+    setTimeout(() => {
+      setHi(true);
+
+      setTimeout(() => {
+        setBasicIntro(true);
+
+        setTimeout(() => {
+          setIntro(true);
+        }, 800);
+      }, 800);
+    }, 500);
+  }, [hi]);
+
   return (
     <FramerWrapper>
-      <div className="grid sm:grid-cols-2 grid-cols-1 gap-8">
-        <div className="flex flex-col gap-4 order-2 sm:order-1 items-center sm:items-start">
-          <div className="font-bold text-4xl mt-8 text-blue-200">
-            hi suraj here 👋
-          </div>
-          <div> 24-year-old software developer from India 🇮🇳.</div>
-          <div className="sm:max-w-[90%] ">
-            I enjoy building full-stack web applications, solving data
-            structures and algorithms puzzles, and tackling challenging coding
-            problems. When I’m not immersed in creating web solutions, you’ll
-            often find me perfecting my coffee brewing skills to keep my
-            programming energy high. I’m passionate about exploring the cutting
-            edge of web development and am always eager to learn and share new
-            technological insights.
-          </div>
-          <div className="flex gap-7 items-center w-full">
+      <div className="grid sm:grid-cols-2 grid-cols-1 gap-8  ">
+        <div className="flex flex-col gap-4 order-2 sm:order-1 items-center sm:items-start ">
+
+       
+          {hi ? (
+            <motion.div initial={{opacity:0}} animate={{opacity:1}}  transition={{ duration: 0.5, ease: "easeIn" }} className="font-bold text-4xl mt-8 text-blue-200">
+              hi suraj here 👋
+            </motion.div>
+          ) : (
+            <></>
+          )}
+
+          {basicIntro ? (
+            <motion.div initial={{opacity:0}} animate={{opacity:1}}  transition={{ duration: 0.5, ease: "easeIn" }}> 24-year-old software developer from India 🇮🇳.</motion.div>
+          ) : (
+            <></>
+          )}
+
+          {intro ? (
+            <motion.div initial={{opacity:0}} animate={{opacity:1}}  transition={{ duration: 0.5, ease: "easeIn" }}>
+              <div className="sm:max-w-[90%] text-justify sm:text-left ">
+                I enjoy building full-stack web applications, solving data
+                structures and algorithms puzzles, and tackling challenging
+                coding problems. When I’m not immersed in creating web
+                solutions, you’ll often find me perfecting my coffee brewing
+                skills to keep my programming energy high. I’m passionate about
+                exploring the cutting edge of web development and am always
+                eager to learn and share new technological insights.
+              </div>
+               <div className="flex gap-7 items-center w-full mt-5 justify-center sm:justify-start">
             <motion.div
               whileHover={{
                 scale: 1.05,
@@ -89,13 +125,17 @@ function Introduction() {
               <img src={leetcodeLogo} width={20} height={20} />
             </motion.a>
           </div>
+            </motion.div>
+          ) : (
+            <></>
+          )} 
         </div>
         <motion.div
           whileHover={{
             scale: 1.05,
           }}
           transition={{ type: "spring", stiffness: 300, damping: 20 }}
-          className="flex flex-col order-1 sm:order-2 items-center sm:items-start justify-center"
+          className="flex flex-col order-1 sm:order-2 items-center sm:items-start sm:mt-20"
         >
           <img src={profile} height={300} width={300} className="rounded " />
         </motion.div>
