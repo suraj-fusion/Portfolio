@@ -11,7 +11,7 @@ import { useEffect, useState } from "react";
 function Introduction() {
   function handleResumeDownload() {
     const link = document.createElement("a");
-    link.href = "/Resume (8).pdf";
+    link.href = "/Suraj_Raj_Resume.pdf";
     link.download = "Suraj_Raj_Resume.pdf";
     link.click();
   }
